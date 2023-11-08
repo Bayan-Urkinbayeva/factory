@@ -4,18 +4,18 @@
             <router-link to="/">
                 <img src="../assets/artlogo.svg" class="w-[150px] h-[72px]" alt="Art Gallery Logo">
             </router-link>
-            <div class="w-72 flex items-center justify-between">
+            <div class="w-24 md:w-72 flex items-center justify-between">
                 <router-link to="/">
-                    <div class="w-32 h-10 flex">
+                    <div class="md:w-32 h-10 flex">
                         <div class="w-8 h-10 flex items-center justify-center">
                             <img src="../assets/searchWhite.svg" class="w-4">
                         </div>
-                        <input placeholder="Поиск" class="bg-black w-24 text-white outline-none placeholder-white">
+                        <input placeholder="Поиск" class="bg-black w-24 text-white outline-none placeholder-white hidden md:block">
                     </div>
                 </router-link>
                 <router-link to="/favorites" class="flex items-center">
                 <img src="../assets/favorites.svg" class="w-5 mr-1" alt="Favorites">
-                <p class="text-lg text-white font-normal">Избранное</p>
+                <p class="text-lg text-white font-normal hidden md:block">Избранное</p>
                 </router-link>
             </div>
         </div>

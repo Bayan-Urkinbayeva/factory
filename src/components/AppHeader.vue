@@ -7,7 +7,7 @@
             <div class="flex items-center">
                 <router-link to="/favorites" class="flex items-center">
                 <img src="../assets/favorites.svg" class="w-5 mr-1" alt="Favorites">
-                <p class="text-lg text-white font-normal">Избранное</p>
+                <p class="text-lg text-white font-normal hidden md:block">Избранное</p>
                 </router-link>
             </div>
         </div>

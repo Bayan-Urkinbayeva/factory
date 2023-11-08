@@ -6,17 +6,17 @@
                 <div class="w-56 h-14 flex items-center justify-evenly">
                     <img :src="imageDetails && imageDetails.user ? imageDetails.user.profile_image.medium : 'Unknown'" class="w-14 h-14 rounded-lg">
                     <div>
-                        <p class="text-lg text-white font-normal">{{ imageDetails && imageDetails.user ? imageDetails.user.name : 'Unknown'}}</p>
-                        <p class="text-base text-white font-normal">@{{ imageDetails && imageDetails.user ? imageDetails.user.username : 'Unknown'}}</p>
+                        <p class="text-lg md:text-white font-normal">{{ imageDetails && imageDetails.user ? imageDetails.user.name : 'Unknown'}}</p>
+                        <p class="text-base text-gray-400 md:text-white font-normal">@{{ imageDetails && imageDetails.user ? imageDetails.user.username : 'Unknown'}}</p>
                     </div>
                 </div>
                 <div class="h-14 w-64 flex items-center justify-evenly">
-                    <div :class="{'bg-red-500': isFavorited, 'bg-white': !isFavorited}" class="w-10 h-10 flex items-center justify-center rounded-lg" @click="toggleFavorite(imageDetails)">
+                    <div :class="{'bg-red-500': isFavorited, 'bg-white': !isFavorited}" class="w-10 shadow-lg h-10 flex items-center justify-center rounded-lg" @click="toggleFavorite(imageDetails)">
                         <img src="../assets/favorites2.svg" class="w-6">
                     </div>
-                    <div class="flex bg-[#FFF200] w-40 h-10 flex items-center justify-evenly bg-[#FFF200] rounded-lg">
+                    <div class="flex bg-[#FFF200] w-16 md:w-40 h-10 flex items-center justify-evenly bg-[#FFF200] rounded-lg">
                         <img src="../assets/download.svg" class="w-6">
-                        <p class="text-lg">Download</p>
+                        <p class="text-lg hidden md:block">Download</p>
                     </div>
                 </div>
             </div>
