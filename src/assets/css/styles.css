@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles go here */
+/* Customize scrollbar styles */
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+  
